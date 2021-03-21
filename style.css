@@ -34,9 +34,10 @@ ul {
     margin: 0;
     padding: 0;
 }
-.box li {
-    display: block;
+ul.link-icon li {
+    display: inline;
     margin: 6px;
+    font-size: 60px;
     list-style: none;
 }
 .box li a {
@@ -44,8 +45,11 @@ ul {
     text-decoration: none;
     transition: all ease-in-out 250ms;
 }
-#github-icon {
-    font-size: 60px;
+ul.nolink-icon li{
+    display: block;
+    margin: 6px;
+    font-size: 17px;
+    list-style: none;
 }
 .box li a:hover {
     color: #7e7e7e;
