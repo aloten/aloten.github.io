@@ -4,6 +4,7 @@ body {
     background: url(images/Phuket.JPG) no-repeat;
     background-size: cover;
 }
+
 .box {
     width: 450px;
     background: rgba(0, 0, 0, 0.4);
@@ -13,67 +14,89 @@ body {
     margin-top: 5%;
     color: white;
     font-family: 'Myriad Roman', sans-serif;
+    border-radius: 6px;
 }
+
 .box-img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
 }
+
 .box h1 {
     font-size: 40px;
     font-weight: 100;
 }
+
 .box h5 {
     font-size: 20px;
     font-weight: 100;
 }
+
 .box p {
     text-align: justify;
 }
+
 ul {
     margin: 0;
     padding: 0;
 }
+
 ul.link-icon li {
     display: inline;
     margin: 6px;
     font-size: 60px;
     list-style: none;
 }
+
 .box li a {
     color: white;
     text-decoration: none;
     transition: all ease-in-out 250ms;
 }
+
 ul.nolink-icon li{
     display: block;
     margin: 6px;
     font-size: 17px;
     list-style: none;
 }
+
 .box li a:hover {
     color: #7e7e7e;
 }
+
 .box2 {
     position: relative;
     bottom: 30px;
-    width: 940px;
-    background: rgba(0, 0, 0, 0.4);
+    width: 965px;
+    background: rgba(0, 0, 0, 0.8);
     padding: 40px;
     text-align: left;
     margin: auto;
     margin-top: 5%;
     color: white;
     font-family: 'Myriad Roman', sans-serif;
+    border-radius: 6px;
 }
+
 .box2 h5 {
     position: relative;
     bottom: 10px;
     padding: 0;
+    text-align: center;
     font-size: 30px;
     font-family: 'Myriad Roman', sans-serif;
 }
+
 #phone-icon {
     position: relative;
     right: 9px;
+}
+
+.bk-root {
+    display: block;
+    margin: auto;
+    border: 7px solid rgb(150, 150, 150);
+    border-radius: 6px;
 }
