@@ -66,6 +66,24 @@ ul.nolink-icon li{
     color: #7e7e7e;
 }
 
+.links {
+    position: relative;
+    right: 400px;
+    width: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 6px;
+}
+
+.links a {
+    color: white;
+    font-family: 'Myriad Roman', sans-serif;
+    font-size: 20px;
+}
+
 .box2 {
     position: relative;
     bottom: 30px;
