@@ -114,6 +114,9 @@ footer {
 }
 
 /* Homepage */
-.main-section img {
+.main-section {
+  background: url('/images/design.jpeg') no-repeat center center/cover;
   width: 100%;
+  min-height: 100%;
+  overflow: hidden;
 }
