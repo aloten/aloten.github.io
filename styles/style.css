@@ -164,12 +164,11 @@ body {
 
   #portfolio-btn:hover,
   #portfolio-btn:focus {
-    background-color: #f4f4f4;
+    background-color: #dbdbdb;
     border: 1px solid rgb(41, 86, 172);
   }
 
   #portfolio-btn a {
-    /* border: red 1px solid; */
     letter-spacing: 0.05rem;
     font-size: 1.5rem;
     text-transform: uppercase;
