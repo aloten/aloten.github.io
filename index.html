@@ -9,59 +9,28 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Aidan Loten's Website</title>
+    <title>Aidan Loten | Home</title>
   </head>
   <body>
-    <div class="main">
-      <aside class="sidebar">
-        <img src="images/profile.jpg" alt="Profile Pic" class="box-img" />
-        <div class="sidebar-title">
-          <h1>Aidan Loten</h1>
-          <h5><span>Full-Stack engineer</span>, USA</h5>
-        </div>
-        <ul class="nav">
-          <li>
-            <a href="index.html"> <span class="current">Home</span></a>
-          </li>
-          <li>
-            <a href="templates/portfolio.html"> <span>Portfolio</span></a>
-          </li>
-          <li>
-            <a href="templates/about.html"><span>About</span></a>
-          </li>
-          <li>
-            <a href=""><span>Resume</span></a>
-          </li>
-          <li>
-            <a href=""><span>Skills</span></a>
-          </li>
-          <li>
-            <a href=""><span>Contact</span></a>
-          </li>
-        </ul>
-        <ul class="icons">
-          <li>
-            <a href="https://github.com/aloten" target="_blank"
-              ><i class="fab fa-github-square"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/aidan-loten-a009b9141/"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-        </ul>
-        <footer class="sidebar-footer">&copy; 2021 Aidan Loten</footer>
-      </aside>
-      <div class="main-section">
-        <div class="btn" id="portfolio-btn">
-          <a href="templates/portfolio.html"
-            >View Portfolio <i class="fas fa-code"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+    <nav class="navbar">
+      <input id="collapsible" class="toggle" type="checkbox" />
+      <label for="collapsible" class="lbl-toggle"
+        ><i class="fas fa-bars fa-2x"></i
+      ></label>
+      <ul class="nav-links">
+        <li><a href="" class="nav-link">Portfolio</a></li>
+        <li><a href="resume.html" class="nav-link">Resume</a></li>
+      </ul>
+    </nav>
+    <section class="profile">
+      <img class="profile-img" src="images/profile.jpg" alt="" />
+      <h2 class="profile-name">Aidan Loten</h2>
+      <h5 class="profile-title">Full-stack Engineer, USA</h5>
+      <p class="profile-desc">
+        My projects include full-stack (MERN) applications in JavaScript, to
+        webscrapering and data analysis in Python, to algorithms in Java, to
+        responsive html/css only websites.
+      </p>
+    </section>
   </body>
 </html>
