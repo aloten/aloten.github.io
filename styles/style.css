@@ -68,15 +68,19 @@ input[type='checkbox'] {
 }
 
 /* Profile */
+.profile {
+  padding: 1rem;
+}
+
+.profile-head {
+  display: flex;
+}
+
 .profile-img {
-  margin: 1rem;
+  margin-right: 10%;
   float: left;
   border-radius: 50%;
   height: 5rem;
-}
-
-.profile-name {
-  margin: 1rem;
 }
 
 .profile-desc {
