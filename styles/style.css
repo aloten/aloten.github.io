@@ -1,6 +1,6 @@
 :root {
-  --light-grey: #dadada;
-  --dark-grey: #888;
+  --light-grey: #aaaaaa;
+  --dark-grey: #24292f;
 }
 
 * {
@@ -10,15 +10,23 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Navbar */
 
 .navbar {
-  background-color: #dadada;
+  background-color: var(--dark-grey);
   height: 4rem;
-  border-bottom: var(--dark-grey) solid 1px;
+  border-bottom: var(--light-grey) solid 1px;
 }
 
 input[type='checkbox'] {
@@ -33,30 +41,29 @@ input[type='checkbox'] {
   text-align: center;
   cursor: pointer;
   border-radius: 0.5rem;
+  color: white;
 }
 
 .nav-links {
-  background-color: var(--light-grey);
+  background-color: var(--dark-grey);
   font-size: 1.3rem;
   position: relative;
   top: 4rem;
   padding-top: 1rem 0;
   line-height: 3rem;
   text-align: center;
-  list-style: none;
   max-height: 0px;
   overflow: hidden;
 }
 
 .nav-links li {
-  border-bottom: var(--dark-grey) solid 1px;
+  border-bottom: var(--light-grey) solid 1px;
 }
 
 .nav-link {
   display: block;
   width: 100%;
-  text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .nav-link:hover {
@@ -69,20 +76,79 @@ input[type='checkbox'] {
 
 /* Profile */
 .profile {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .profile-head {
   display: flex;
+  align-items: center;
 }
 
 .profile-img {
-  margin-right: 10%;
+  margin-right: 1.5rem;
   float: left;
   border-radius: 50%;
-  height: 5rem;
+  width: 20%;
+  max-width: 10rem;
+  height: auto;
+}
+
+.profile-name {
+  font-size: 1.7rem;
+}
+
+.profile-job {
+  line-height: 1.6rem;
+  color: #6d6d6d;
 }
 
 .profile-desc {
   clear: both;
+  margin-top: 2rem;
+}
+
+/* Portfolio */
+.portfolio {
+  margin-top: 1rem;
+  border-top: 1px solid var(--dark-grey);
+  padding-top: 0.5rem;
+  height: 600px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.project-item {
+  border: 1px solid var(--light-grey);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.project-item-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-item-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tech-item {
+  margin: 5px;
+  padding: 5px;
+  border: 1px var(--light-grey) solid;
+  border-radius: 0.5rem;
 }
