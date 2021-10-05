@@ -23,7 +23,7 @@
       </ul>
     </nav>
 
-    <section class="sudoku-section">
+    <section class="main-section sudoku-section">
       <!-- <link rel="stylesheet" href="../styles/sudokuStyle.css" /> -->
 
       <!-- Add React, ReactDOM, and Babel //TODO run without react -->
@@ -37,17 +37,27 @@
       ></script>
       <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-      <p>
+      <p class="sudoku-desc">
         Generate the board, then click on a cell and enter a digit 1-9. You can
         check your answer at any point or solve the puzzle entirely.
       </p>
-
-      <button type="button" id="generate" onclick="generateBoard()">
-        Generate Board
-      </button>
-      <button type="button" id="reset">Reset</button>
-      <button type="button" id="check" onclick="check()">Check</button>
-      <button type="button" id="solve" onclick="solve()">Solve</button>
+      <div class="sudoku-btns">
+        <button
+          class="sudoku-btn"
+          type="button"
+          id="generate"
+          onclick="generateBoard()"
+        >
+          Generate Board
+        </button>
+        <button class="sudoku-btn" type="button" id="reset">Reset</button>
+        <button class="sudoku-btn" type="button" id="check" onclick="check()">
+          Check
+        </button>
+        <button class="sudoku-btn" type="button" id="solve" onclick="solve()">
+          Solve
+        </button>
+      </div>
 
       <table>
         <colgroup>
@@ -173,6 +183,7 @@
           </tr>
         </tbody>
       </table>
+      <a href="../index.html" class="back-btn">Back</a>
 
       <!-- end inner body for sudoku html -->
 
@@ -585,8 +596,6 @@
         // .then(response => response.json())
         // .then(data => console.log(data));
       </script>
-
-      <!-- end of sudoku grid -->
     </section>
 
     <footer class="footer">&copy; Aidan Loten 2021</footer>

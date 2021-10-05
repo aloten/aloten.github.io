@@ -28,8 +28,12 @@ a {
 }
 
 /* || Utility Classes */
+.main-section {
+  padding: 1.5rem;
+}
+
 .back-btn {
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
   display: block;
   padding: 0.2rem 0;
   width: 100%;
@@ -102,10 +106,6 @@ input[type='checkbox'] {
 }
 
 /* || Profile */
-.profile {
-  padding: 1.5rem;
-}
-
 .profile-head {
   display: flex;
   align-items: center;
@@ -203,8 +203,6 @@ input[type='checkbox'] {
 
 /* || Wine Map Page */
 .map-section {
-  padding: 1.5rem;
-  padding-bottom: 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -219,19 +217,73 @@ input[type='checkbox'] {
   border-radius: 3px;
 }
 
-/* || Sudoku Page*/
+/* || Sudoku Page */
 .sudoku-section {
-  padding: 1.5rem;
   display: flex;
   flex-direction: column;
+}
+
+.sudoku-btns {
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.sudoku-btn {
+  flex: 4rem;
+  margin: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid var(--very-light-grey2);
+  border-radius: 5px;
+}
+
+#generate {
+  flex: 450px;
+  background-color: var(--very-light-grey3);
+}
+
+#generate:hover,
+#generate:focus {
+  background-color: var(--very-light-grey);
+  border-color: var(--very-light-grey3);
+}
+
+#reset {
+  background-color: firebrick;
+  color: white;
+}
+
+#reset:hover,
+#reset:focus {
+  background-color: rgb(247, 59, 59);
+}
+
+#check {
+  background-color: skyblue;
+}
+
+#check:hover,
+#check:focus {
+  background-color: rgb(175, 230, 250);
+}
+
+#solve {
+  background-color: forestgreen;
+  color: white;
+}
+
+#solve:hover,
+#solve:focus {
+  background-color: rgb(53, 199, 53);
 }
 
 /* Sudoku grid */
 table {
   border-collapse: collapse;
-  font-family: Calibri, sans-serif;
-  margin: 10px;
-  margin-left: 25px;
+  width: 100%;
 }
 
 colgroup,
@@ -245,15 +297,14 @@ td {
   width: 1.4em;
   text-align: center;
   padding: 0;
-  font-size: 17px;
+  font-size: 1.25rem;
 }
 
 input {
-  width: 20px;
-  border: 0;
+  width: 100%;
+  border: none;
   text-align: center;
-  font-family: Calibri, sans-serif;
-  font-size: 17px;
+  font-size: 1.1rem;
 }
 
 /* Footer */
