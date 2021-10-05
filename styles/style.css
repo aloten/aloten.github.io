@@ -307,6 +307,16 @@ input {
   font-size: 1.1rem;
 }
 
+/* Purple America */
+.prp-am-section img {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+/* Resume */
+.resume-pdf {
+}
+
 /* Footer */
 .footer {
   height: 3rem;
