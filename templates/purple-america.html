@@ -12,40 +12,53 @@
     <title>Aidan Loten | Purple America</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="profile-head-nav">
-        <img class="profile-img" src="../images/profile.jpg" alt="" />
-        <div class="profile-title">
-          <h1 class="profile-name">Aidan Loten</h1>
-          <span class="profile-job">Full-stack engineer, USA</span>
+    <div class="sticky-ftr-wrapper">
+      <nav class="navbar">
+        <div class="profile-head-nav">
+          <img class="profile-img" src="../images/profile.jpg" alt="" />
+          <div class="profile-title">
+            <h1 class="profile-name">Aidan Loten</h1>
+            <span class="profile-job">Full-stack engineer, USA</span>
+          </div>
         </div>
-      </div>
+        <input id="collapsible" class="toggle" type="checkbox" />
+        <label for="collapsible" class="lbl-toggle"
+          ><i class="fas fa-bars fa-2x"></i
+        ></label>
+        <ul class="nav-links">
+          <li>
+            <a href="../index.html" class="nav-link">Portfolio</a>
+          </li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+        </ul>
+      </nav>
 
-      <input id="collapsible" class="toggle" type="checkbox" />
-      <label for="collapsible" class="lbl-toggle"
-        ><i class="fas fa-bars fa-2x"></i
-      ></label>
-      <ul class="nav-links">
-        <li>
-          <a href="../index.html" class="nav-link">Portfolio</a>
-        </li>
-        <li><a href="resume.html" class="nav-link">Resume</a></li>
-      </ul>
-    </nav>
-
-    <section class="main-section prp-am-section">
-      <p>
-        Using GPS coordinate data of US counties and county voting data, I
-        created shapes based on county boundaries and added color based on
-        voting proportions of the 2016 presidential election. I combined all the
-        counties to make a map of the US that depicts proportional voting of the
-        election. Blue for Democratic, red for Republican, green for other. I
-        used Python for this project.
-      </p>
-      <img src="../images/Purple_America.jpg" alt="" />
-      <a href="../index.html" class="back-btn">Back</a>
-    </section>
-
-    <footer class="footer">&copy; Aidan Loten 2021</footer>
+      <section class="main-section prp-am-section">
+        <p>
+          Using GPS coordinate data of US counties and county voting data, I
+          created shapes based on county boundaries and added color based on
+          voting proportions of the 2016 presidential election. I combined all
+          the counties to make a map of the US that depicts proportional voting
+          of the election. Blue for Democratic, red for Republican, green for
+          other. I used Python for this project.
+        </p>
+        <img src="../images/Purple_America.jpg" alt="" />
+        <a href="../index.html" class="back-btn">Back</a>
+      </section>
+      <footer class="footer">
+        <hr class="ftr-hr" />
+        <div class="footer-flex">
+          <span>&copy; Aidan Loten 2021</span>
+        <a href="https://github.com/aloten" target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/aidan-loten-a009b9141/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </footer>
+</div>
+    </div>
   </body>
 </html>

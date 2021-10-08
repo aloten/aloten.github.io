@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: Calibri, Arial, Helvetica, sans-serif;
   color: var(--dark-grey);
@@ -48,18 +52,28 @@ a {
   }
 }
 
-@media (min-width: 768px) {
-  /* Sticky footer help */
-  .ex-footer-wrapper {
-    min-height: 100%;
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: 2rem;
-  }
+/* Sticky footer help */
+.sticky-ftr-wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .main-section {
   padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .main-section {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main-section {
+    padding: 1.5rem 10%;
+  }
 }
 
 .back-btn {
@@ -288,15 +302,18 @@ input[type='checkbox'] {
 }
 
 .project-list {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-around;
-  list-style: none;
+  margin-top: 0.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .project-item {
-  margin-top: 1rem;
   border: 1px solid var(--light-grey);
   border-radius: 0.5rem;
   padding: 1rem;
@@ -348,15 +365,9 @@ input[type='checkbox'] {
 }
 
 @media (min-width: 768px) {
-  .main-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
-
   .profile {
     flex: 2 120px;
-    margin-right: 1rem;
+    margin-right: 3%;
   }
 
   .profile-head {
@@ -378,7 +389,6 @@ input[type='checkbox'] {
   }
 
   .project-item {
-    margin-right: 1rem;
     flex: 300px;
   }
 }
@@ -386,12 +396,28 @@ input[type='checkbox'] {
 /* || Wine Map Page */
 .map-section {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .map-section {
+    align-items: center;
+  }
+}
+
+.map-section .back-btn {
+  width: 10rem;
 }
 
 .bk-root {
+  height: 600px;
+  width: 950px;
+  overflow: hidden;
+  border: 2px var(--light-grey) solid;
+  border-radius: 3px;
+}
+
+.bk-root > div {
   height: auto;
   width: auto;
   overflow: hidden;
@@ -403,6 +429,21 @@ input[type='checkbox'] {
 .sudoku-section {
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 400px) {
+  .sudoku-section {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .sudoku-section {
+    max-width: 400px;
+    padding: 1.5rem;
+  }
 }
 
 .sudoku-btns {
@@ -490,12 +531,31 @@ input {
 }
 
 /* Purple America */
+.prp-am-section {
+  flex-direction: column;
+}
 .prp-am-section img {
   margin-top: 1.5rem;
   width: 100%;
 }
 
 /* Resume */
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .resume-section {
+    justify-content: flex-start;
+  }
+}
+
+.resume-section a {
+  width: 15rem;
+}
+
 .resume-pdf {
   background-color: #4bb543;
   color: white;
@@ -518,6 +578,10 @@ input {
   /* background-color: var(--dark-grey); */
   /* color: white; */
   text-align: center;
+}
+
+.footer-flex {
+  margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -532,10 +596,4 @@ input {
 .footer i:hover,
 .footer i:focus {
   color: salmon;
-}
-@media (min-width: 768px) {
-  /* used to assist sticky footer */
-  .push {
-    height: 3rem;
-  }
 }
