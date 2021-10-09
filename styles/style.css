@@ -364,6 +364,42 @@ input[type='checkbox'] {
   font-size: 0.85rem;
 }
 
+.tech-item .fa-js-square {
+  color: rgb(197, 197, 0);
+}
+
+.tech-item .fa-node-js {
+  color: limegreen;
+}
+
+.tech-item .fa-react {
+  color: darkturquoise;
+}
+
+.tech-item .fa-leaf {
+  color: forestgreen;
+}
+
+.tech-item .fa-google {
+  color: blue;
+}
+
+.tech-item .fa-html5 {
+  color: orangered;
+}
+
+.tech-item .fa-css3-alt {
+  color: dodgerblue;
+}
+
+.tech-item .fa-python {
+  color: steelblue;
+}
+
+.tech-item .fa-java {
+  color: red;
+}
+
 @media (min-width: 768px) {
   .profile {
     flex: 2 120px;
