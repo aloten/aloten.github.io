@@ -7,6 +7,7 @@
   --very-light-grey: #e2e2e2;
   --very-light-grey2: #f3f3f3;
   --very-light-grey3: #bbbbbb;
+  --medium-grey: #3a434d;
   --dark-grey: #24292f;
   --link-blue: #0969da;
 }
@@ -35,21 +36,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-/* || Utility Classes */
-.init-display-no {
-  display: none;
-}
-
-.min-dis-768 {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .min-dis-768 {
-    display: block;
-  }
 }
 
 /* Sticky footer help */
@@ -95,38 +81,19 @@ a {
   border-color: var(--light-grey);
 }
 
-/* || Navbar */
-.navbar {
+/* || Mobile Navbar */
+.mobile-navbar {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--dark-grey);
-  height: 4rem;
-  border-bottom: var(--light-grey) solid 1px;
 }
 
-/* TO DO -- Move profile header to nav on scroll / other pages */
-.profile-head-nav {
-  display: flex;
+.nav-title {
   margin: 1rem;
-}
-
-.init-display-no {
-  display: none;
-}
-
-.profile-head-nav .profile-img {
-  height: 3rem;
-  width: auto;
-}
-
-.profile-head-nav .profile-name {
+  font-size: 1.5rem;
   color: white;
-  font-size: 1.2rem;
-}
-
-.profile-head-nav .profile-job {
-  color: var(--very-light-grey3);
 }
 
 input[type='checkbox'] {
@@ -134,72 +101,63 @@ input[type='checkbox'] {
 }
 
 .lbl-toggle {
-  display: block;
   position: absolute;
-  margin: 1rem 0;
-  right: 1.5rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.5rem;
+  top: 0.9rem;
+  right: 1rem;
   color: white;
 }
 
-.nav-links {
-  z-index: 1;
-  background-color: var(--dark-grey);
-  font-size: 1.3rem;
-  position: relative;
-  top: 4rem;
-  padding-top: 1rem 0;
-  line-height: 3rem;
-  text-align: center;
-  max-height: 0px;
-  overflow: hidden;
-}
-
-.nav-links li {
-  border-bottom: var(--light-grey) solid 1px;
-}
-
-.nav-link {
-  display: block;
+.mobile-nav-links {
+  display: none;
+  flex-direction: column;
   width: 100%;
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 1rem;
   color: white;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid var(--light-grey);
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  background-color: var(--light-grey);
+.mobile-nav-link:hover,
+.mobile-nav-link:focus {
+  background-color: var(--medium-grey);
 }
 
-.toggle:checked + .lbl-toggle + .nav-links {
-  max-height: 100vh;
+.toggle:checked + .lbl-toggle + .mobile-nav-links {
+  display: flex;
 }
 
+.high-width-nav {
+  align-items: flex-start;
+}
+
+.high-width-link {
+  text-align: left;
+}
+
+/* || Non-Mobile Navbar */
 @media (min-width: 768px) {
-  .toggle,
-  .lbl-toggle {
-    display: none;
-  }
-
   .navbar {
     display: flex;
+    height: 4rem;
     align-items: center;
     justify-content: space-between;
+    background-color: var(--dark-grey);
   }
 
-  /* TO DO -- Move profile header to nav on scroll / other pages */
   .profile-head-nav {
     display: flex;
     margin: 1rem;
   }
 
-  .init-display-no {
-    display: none;
-  }
-
   .profile-head-nav .profile-img {
     height: 3rem;
+    margin-right: 1rem;
+    border-radius: 50%;
     width: auto;
   }
 
@@ -213,32 +171,29 @@ input[type='checkbox'] {
   }
 
   .nav-links {
-    max-height: none;
     display: flex;
-    align-items: center;
-    position: static;
     height: 100%;
-    margin-right: max(1rem, 5%);
-  }
-
-  .nav-links li {
-    border: none;
-    height: 100%;
+    margin-right: 1rem;
+    margin-bottom: 2px;
   }
 
   .nav-link {
-    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
     height: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: white;
+    border-bottom: var(--dark-grey) 3px solid;
   }
 
   .nav-link:hover,
   .nav-link:focus {
-    background-color: var(--dark-grey);
-    border-bottom: 2px var(--very-light-grey3) solid;
+    border-bottom: 3px var(--very-light-grey3) solid;
   }
 
   .current-nav {
-    border-bottom: 2px salmon solid;
+    border-bottom: 3px salmon solid;
   }
 }
 
@@ -632,4 +587,21 @@ input {
 .footer i:hover,
 .footer i:focus {
   color: salmon;
+}
+
+/* Break point Utilities, need to go at end */
+@media (min-width: 768px) {
+  .max-dis-768 {
+    display: none;
+  }
+}
+
+.min-dis-768 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .min-dis-768 {
+    display: flex;
+  }
 }

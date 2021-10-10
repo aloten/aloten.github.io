@@ -13,7 +13,21 @@
   </head>
   <body>
     <div class="sticky-ftr-wrapper">
-      <nav class="navbar">
+      <nav class="mobile-navbar max-dis-768">
+        <span class="nav-title">Purple America</span>
+        <input id="collapsible" class="toggle" type="checkbox" />
+        <label for="collapsible" class="lbl-toggle"
+          ><i class="fas fa-bars fa-2x"></i
+        ></label>
+        <ul class="mobile-nav-links">
+          <li><a href="../index.html" class="mobile-nav-link">Portfolio</a></li>
+          <li>
+            <a href="resume.html" class="mobile-nav-link">Resume</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="navbar min-dis-768">
         <div class="profile-head-nav">
           <img class="profile-img" src="../images/profile.jpg" alt="" />
           <div class="profile-title">
@@ -21,14 +35,8 @@
             <span class="profile-job">Full-stack engineer, USA</span>
           </div>
         </div>
-        <input id="collapsible" class="toggle" type="checkbox" />
-        <label for="collapsible" class="lbl-toggle"
-          ><i class="fas fa-bars fa-2x"></i
-        ></label>
         <ul class="nav-links">
-          <li>
-            <a href="../index.html" class="nav-link">Portfolio</a>
-          </li>
+          <li><a href="../index.html" class="nav-link">Portfolio</a></li>
           <li><a href="resume.html" class="nav-link">Resume</a></li>
         </ul>
       </nav>

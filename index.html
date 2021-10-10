@@ -13,19 +13,22 @@
   </head>
   <body>
     <div class="sticky-ftr-wrapper">
-      <nav class="navbar">
-        <span class="min-dis-768">&nbsp;</span>
-        <div class="profile-head-nav init-display-no">
-          <img class="profile-img" src="images/profile.jpg" alt="" />
-          <div class="profile-title">
-            <h1 class="profile-name">Aidan Loten</h1>
-            <span class="profile-job">Full-stack engineer, USA</span>
-          </div>
-        </div>
+      <nav class="mobile-navbar max-dis-768">
+        <span class="nav-title">Portfolio</span>
         <input id="collapsible" class="toggle" type="checkbox" />
         <label for="collapsible" class="lbl-toggle"
           ><i class="fas fa-bars fa-2x"></i
         ></label>
+        <ul class="mobile-nav-links">
+          <li><a href="" class="mobile-nav-link current-nav">Portfolio</a></li>
+          <li>
+            <a href="templates/resume.html" class="mobile-nav-link">Resume</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="navbar min-dis-768">
+        <div class="profile-head-nav"></div>
         <ul class="nav-links">
           <li><a href="" class="nav-link current-nav">Portfolio</a></li>
           <li><a href="templates/resume.html" class="nav-link">Resume</a></li>
