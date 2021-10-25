@@ -355,6 +355,10 @@ input[type='checkbox'] {
   color: red;
 }
 
+.tech-item .fa-facebook {
+  color: #3b5998;
+}
+
 @media (min-width: 768px) {
   .profile {
     flex: 2 120px;
