@@ -359,6 +359,10 @@ input[type='checkbox'] {
   color: #3b5998;
 }
 
+.tech-item .fa-bootstrap {
+  color: purple;
+}
+
 @media (min-width: 768px) {
   .profile {
     flex: 2 120px;
