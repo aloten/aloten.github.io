@@ -19,8 +19,10 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -43,6 +45,7 @@ a {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
 }
 
 .main-section {
@@ -572,10 +575,6 @@ input {
 }
 
 .footer {
-  height: 3rem;
-  padding: 2rem;
-  /* background-color: var(--dark-grey); */
-  /* color: white; */
   text-align: center;
 }
 
